@@ -1,0 +1,68 @@
+== neuroroute-1024 :: sanitize ==
+make[1]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+make clean
+make[2]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+rm -rf build bin lib
+make[2]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+make CFLAGS="-O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined" all
+make[2]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/routing.c -o build/routing.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/spatial_pool.c -o build/spatial_pool.o
+ar rcs lib/libneuro_router.a build/routing.o build/spatial_pool.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_routing.c lib/libneuro_router.a -o bin/test_routing
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_spatial_pool.c lib/libneuro_router.a -o bin/test_spatial_pool
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined examples/demo.c lib/libneuro_router.a -o bin/neuro_demo
+make[2]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_routing
+routing tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_spatial_pool
+spatial pool tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/neuro_demo
+Selected route target: 1002
+Selected spatial page: 8192
+make[1]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-1024'
+== neuroroute-devtools-1024 :: sanitize ==
+make[1]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'
+make clean
+make[2]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'
+rm -rf build bin lib
+make[2]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'
+make CFLAGS="-O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined" all
+make[2]: Entering directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/routing.c -o build/routing.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/spatial_pool.c -o build/spatial_pool.o
+ar rcs lib/libneuro_router.a build/routing.o build/spatial_pool.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_routing.c lib/libneuro_router.a  -o bin/test_routing
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_spatial_pool.c lib/libneuro_router.a  -o bin/test_spatial_pool
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/process_runner.c -o build/process_runner.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_process_runner.c build/process_runner.o  -o bin/test_process_runner
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/project_detect.c -o build/project_detect.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/fs_utils.c -o build/fs_utils.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_project_detect.c build/project_detect.o build/fs_utils.o  -o bin/test_project_detect
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/project_init.c -o build/project_init.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined tests/test_project_init.c build/project_init.o build/project_detect.o build/fs_utils.o  -o bin/test_project_init
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined examples/demo.c lib/libneuro_router.a  -o bin/neuro_demo
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/devcli.c -o build/devcli.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/main.c -o build/main.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/project_actions.c -o build/project_actions.o
+cc -Iinclude -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined -c src/toolchains.c -o build/toolchains.o
+cc -std=c11 -Wall -Wextra -Wpedantic -Werror -O1 -g3 -fno-omit-frame-pointer -fsanitize=address,undefined build/devcli.o build/fs_utils.o build/main.o build/process_runner.o build/project_actions.o build/project_detect.o build/project_init.o build/toolchains.o  -o bin/neuro
+make[2]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_routing
+routing tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_spatial_pool
+spatial pool tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_process_runner
+neuro: failed to start 'neuroroute-command-that-does-not-exist': No such file or directory
+process runner tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_project_detect
+project detect tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/test_project_init
+neuro: refusing to overwrite non-empty directory: /tmp/neuroroute-init-Nl01iE/protected
+project init tests: PASS
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./bin/neuro_demo
+Selected route target: 1002
+Selected spatial page: 8192
+ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 sh ./tests/test_cli.sh ./bin/neuro
+CLI smoke tests: PASS
+make[1]: Leaving directory '/mnt/data/nr1024_work/NeuroRoute-1024-Monorepo/projects/neuroroute-devtools-1024'

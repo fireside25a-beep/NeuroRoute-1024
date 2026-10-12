@@ -1,0 +1,253 @@
+{
+  "archived_git_metadata_policy": "excluded from one-repository GitHub upload; no nested .git directories",
+  "functions_exported_by_object": {
+    "neuroroute-1024": [
+      {
+        "count": 6,
+        "module": "routing",
+        "symbols": [
+          "neuro_add_edge",
+          "neuro_get_edge_spike_count",
+          "neuro_get_node_snapshot",
+          "neuro_router_reset",
+          "neuro_set_node",
+          "route_synaptic_signal"
+        ]
+      },
+      {
+        "count": 4,
+        "module": "spatial_pool",
+        "symbols": [
+          "allocate_spatial_memory",
+          "spatial_pool_get_chunk",
+          "spatial_pool_reset",
+          "spatial_pool_set_chunk"
+        ]
+      }
+    ],
+    "neuroroute-devtools-1024": [
+      {
+        "count": 1,
+        "module": "devcli",
+        "symbols": [
+          "devcli_main"
+        ]
+      },
+      {
+        "count": 9,
+        "module": "fs_utils",
+        "symbols": [
+          "fs_directory_exists",
+          "fs_directory_is_empty",
+          "fs_file_exists",
+          "fs_join",
+          "fs_mkdirs",
+          "fs_path_exists",
+          "fs_remove_python_cache",
+          "fs_remove_tree",
+          "fs_write_text_file"
+        ]
+      },
+      {
+        "count": 1,
+        "module": "main",
+        "symbols": [
+          "main"
+        ]
+      },
+      {
+        "count": 1,
+        "module": "process_runner",
+        "symbols": [
+          "process_run"
+        ]
+      },
+      {
+        "count": 4,
+        "module": "project_actions",
+        "symbols": [
+          "project_action_build",
+          "project_action_clean",
+          "project_action_run",
+          "project_action_test"
+        ]
+      },
+      {
+        "count": 4,
+        "module": "project_detect",
+        "symbols": [
+          "project_detect_path",
+          "project_detect_print",
+          "project_language_name",
+          "project_language_parse"
+        ]
+      },
+      {
+        "count": 1,
+        "module": "project_init",
+        "symbols": [
+          "project_init_create"
+        ]
+      },
+      {
+        "count": 6,
+        "module": "routing",
+        "symbols": [
+          "neuro_add_edge",
+          "neuro_get_edge_spike_count",
+          "neuro_get_node_snapshot",
+          "neuro_router_reset",
+          "neuro_set_node",
+          "route_synaptic_signal"
+        ]
+      },
+      {
+        "count": 4,
+        "module": "spatial_pool",
+        "symbols": [
+          "allocate_spatial_memory",
+          "spatial_pool_get_chunk",
+          "spatial_pool_reset",
+          "spatial_pool_set_chunk"
+        ]
+      },
+      {
+        "count": 3,
+        "module": "toolchains",
+        "symbols": [
+          "toolchain_find_executable",
+          "toolchain_print_status",
+          "toolchain_resolve"
+        ]
+      }
+    ]
+  },
+  "input_archive": "NeuroRoute_1024_DUAL_REPOSITORY_MASTER.zip",
+  "input_archive_file_entries": 257,
+  "input_archive_sha256": "981c12160289e73dccb4dd73803d06e036f82c72bfbdc0b5440b48113c608a69",
+  "input_archive_total_entries": 391,
+  "input_archive_uncompressed_bytes": 667421,
+  "mirror_and_nested_zip_verification": {
+    "MULTIZIPS/neuroroute-1024_GIT.zip": {
+      "archive_sha256": "bcf2aa28e7ab233a1859f51c490a594129b4fe8b55a2194f032ec282965ca2f3",
+      "payload_files": 14,
+      "source_match": true
+    },
+    "MULTIZIPS/neuroroute-1024_SOURCE.zip": {
+      "archive_sha256": "5fb57f5c06343d40836feacdd958855c83a2c4167bb434c7d195b5df0690b661",
+      "payload_files": 14,
+      "source_match": true
+    },
+    "MULTIZIPS/neuroroute-devtools-1024_GIT.zip": {
+      "archive_sha256": "566b8d3d9e5ecef9cc7a095da02f92def75097b3931158e94d81e30e64cfcd68",
+      "payload_files": 33,
+      "source_match": true
+    },
+    "MULTIZIPS/neuroroute-devtools-1024_SOURCE.zip": {
+      "archive_sha256": "47444542579d03b58140a7cf41aa7d964e790b268235db3110bfa89f9bd1948b",
+      "payload_files": 33,
+      "source_match": true
+    },
+    "neuroroute-1024": {
+      "all_three_tree_sources_identical": true,
+      "files": 14
+    },
+    "neuroroute-devtools-1024": {
+      "all_three_tree_sources_identical": true,
+      "files": 33
+    }
+  },
+  "original_git_head_commits": {
+    "neuroroute-1024": "b3a8ea5c994348610654df804a856e284840a58c",
+    "neuroroute-devtools-1024": "ddd18e33ba4a779e77d1b247cce248e257772618"
+  },
+  "original_project_counts": {
+    "neuroroute-1024": 14,
+    "neuroroute-devtools-1024": 33
+  },
+  "original_source_files": 47,
+  "original_source_sha256": {
+    "neuroroute-1024/.gitignore": "df06fec267a33343d8bff7ede6579cd404382c93113de11a7e4e642df05b4e32",
+    "neuroroute-1024/LICENSE": "f5eee63fb76b6585d82d7c3e7e7c5136331316c3256e72cb6bdf587f234d20de",
+    "neuroroute-1024/Makefile": "05271387f5619ce37eb262e8a7a80f507754ce093ab6c27b2707776868606c3b",
+    "neuroroute-1024/README.md": "92d9f07200050cb9d3d7868effd482bf3826962d3413f47c6d1fc1695bc24c51",
+    "neuroroute-1024/docs/ARCHITECTURE.md": "dc2b39c4ee99c5e640af8b0619ac58d639239a6865c707c4554215606f394430",
+    "neuroroute-1024/docs/VALIDATION.md": "45b3bb5f01b9fbe46c348cf4b682952aa34b4b143a1b7fe3fbc7c2ea32d16bba",
+    "neuroroute-1024/examples/demo.c": "339d1de028cda49daace6833e28ebfb7ae4cfbc4c1fac9ea30740c67250ac24d",
+    "neuroroute-1024/include/asm/primitives.h": "fab1afdf891d78ec61206e34439ceb52bb3d98a0abcf0138b3962152cb990f9a",
+    "neuroroute-1024/include/mm/spatial_pool.h": "5ec30f5a0a1c57df217e72d12e9fb11a161c84ef4674637762dadfbcdb46f896",
+    "neuroroute-1024/include/neuro.h": "f04672ca8e01b8401d18a360c449c80b2c01363e0b4192bd344be21fb165271d",
+    "neuroroute-1024/src/routing.c": "5f02f00c7d506d8f15d6d3c1271d83ae1d5862488cc01686b6cd78ccdb8848ab",
+    "neuroroute-1024/src/spatial_pool.c": "d2d1665ae59b8985fbafddbc357579d194f459e80919a1403e6beeaef60c0163",
+    "neuroroute-1024/tests/test_routing.c": "6855804d44fd7378c2c5227e0995b4b0326a0688c3731b9b88e0d7b9184969d6",
+    "neuroroute-1024/tests/test_spatial_pool.c": "1d83facf2ab0ad43f409ab61311d72af82a5bf239dbb25f0e9ee3f1b8cb4c6fa",
+    "neuroroute-devtools-1024/.gitignore": "df06fec267a33343d8bff7ede6579cd404382c93113de11a7e4e642df05b4e32",
+    "neuroroute-devtools-1024/LICENSE": "f5eee63fb76b6585d82d7c3e7e7c5136331316c3256e72cb6bdf587f234d20de",
+    "neuroroute-devtools-1024/Makefile": "3259c32ab072662e7dedac70d25679b9f8c1adada48418230db97f35e4dc2dbf",
+    "neuroroute-devtools-1024/README.md": "b10050c3627392ecee60cdb3b0ac9401a402daca0cfbce0ff1a6d7f91220c8ac",
+    "neuroroute-devtools-1024/docs/ARCHITECTURE.md": "6ef66e8f0672cfb935b2852ed65308d63bc68f62f592a2ba7e234c987e0ce6b6",
+    "neuroroute-devtools-1024/docs/VALIDATION.md": "d90b0d4d7f127430e371d41b5bbccff7ee3ecdee3cb30e0c55b99e128c8ae3a5",
+    "neuroroute-devtools-1024/examples/demo.c": "339d1de028cda49daace6833e28ebfb7ae4cfbc4c1fac9ea30740c67250ac24d",
+    "neuroroute-devtools-1024/include/asm/primitives.h": "fab1afdf891d78ec61206e34439ceb52bb3d98a0abcf0138b3962152cb990f9a",
+    "neuroroute-devtools-1024/include/devcli.h": "bb26df77fb67d0c27b33be59d1a48a12a6b0524f128ea1e6da89b119f2bb32ee",
+    "neuroroute-devtools-1024/include/fs_utils.h": "04ae553c3da083d2b399d184eaa57d534eb415c6006bfc0a493c0ca1a98a41ba",
+    "neuroroute-devtools-1024/include/mm/spatial_pool.h": "5ec30f5a0a1c57df217e72d12e9fb11a161c84ef4674637762dadfbcdb46f896",
+    "neuroroute-devtools-1024/include/neuro.h": "f04672ca8e01b8401d18a360c449c80b2c01363e0b4192bd344be21fb165271d",
+    "neuroroute-devtools-1024/include/process_runner.h": "1e0396f0bb78831cfb9010d432b0fd65e61fe538f8ea3a2bf82d7d09e0bc1819",
+    "neuroroute-devtools-1024/include/project_actions.h": "ead03e37360211bead8cea35c62b60e65c87a9498548a2189b5971d648276bee",
+    "neuroroute-devtools-1024/include/project_detect.h": "0084ff238b7b7dc698d414c146a9b32cf5932155cca558e1afc91d6dee9dce45",
+    "neuroroute-devtools-1024/include/project_init.h": "a1cb3488f4f5cababf5a04bc87c3c2243d77ee2bb21acfb36a9fd9a7d6d1d3e4",
+    "neuroroute-devtools-1024/include/toolchains.h": "808042bb5e4382aeef4c22f5980d48a95dfe785915a965fc6ecdf9e2672a93bf",
+    "neuroroute-devtools-1024/src/devcli.c": "62ee9cfd9abdada528e9bde382b3a024d793d980432d398d5a98c4341abb750c",
+    "neuroroute-devtools-1024/src/fs_utils.c": "e20c7dcc361a237a9ddc3f5afb3be762a65e14ea12f055b3955a5e8e1fd0648b",
+    "neuroroute-devtools-1024/src/main.c": "7c8c11585e289bc02012b8b037ae979e48cc3094ffc284dc05804cb0be90f433",
+    "neuroroute-devtools-1024/src/process_runner.c": "83893744a8e35bb0430c5bcaf21209bfbf85410acacdf1f570733785b8295350",
+    "neuroroute-devtools-1024/src/project_actions.c": "c1d96e99d999adda3c1dbbc96c801ef532705b802e613bab35031bcee83ab140",
+    "neuroroute-devtools-1024/src/project_detect.c": "fa0aedd73bc69010f6540b6174e2cde35b36fd9703e7c9677ea249f53fed58a7",
+    "neuroroute-devtools-1024/src/project_init.c": "89ea8d481eb1c6952ae6b6ba19bd4a6fe29f4568419bc1f7c678b60810295d6d",
+    "neuroroute-devtools-1024/src/routing.c": "5f02f00c7d506d8f15d6d3c1271d83ae1d5862488cc01686b6cd78ccdb8848ab",
+    "neuroroute-devtools-1024/src/spatial_pool.c": "d2d1665ae59b8985fbafddbc357579d194f459e80919a1403e6beeaef60c0163",
+    "neuroroute-devtools-1024/src/toolchains.c": "dcc44c632718b56d5e1b0f4383f0d92a050c3af2f154a3e30110ddc5cb449e7f",
+    "neuroroute-devtools-1024/tests/test_cli.sh": "8436a691ce379d10d3cd268dad63597544fc388977321a7b5ede8bd613c3ce5b",
+    "neuroroute-devtools-1024/tests/test_process_runner.c": "ab97fe6e4caa146a72f72c7ea6dbe03803ad6bc7c608e33dae253e158b7c752f",
+    "neuroroute-devtools-1024/tests/test_project_detect.c": "c6b9db1b30116adf57276379a1bc389c080397e9c99a3c387775cd0054f8c3c6",
+    "neuroroute-devtools-1024/tests/test_project_init.c": "8b5bdc93e2071f8911086a56abdfb2e80f65f0952b974d6b71640d95e2eb6e6d",
+    "neuroroute-devtools-1024/tests/test_routing.c": "6855804d44fd7378c2c5227e0995b4b0326a0688c3731b9b88e0d7b9184969d6",
+    "neuroroute-devtools-1024/tests/test_spatial_pool.c": "1d83facf2ab0ad43f409ab61311d72af82a5bf239dbb25f0e9ee3f1b8cb4c6fa"
+  },
+  "original_top_level_release_notes_sha256": "1fcef96862944804362c8d004dcda8891869d5ca7a0aef9380b92f4c0f0df601",
+  "shared_relative_paths": {
+    ".gitignore": "identical",
+    "LICENSE": "identical",
+    "Makefile": "different",
+    "README.md": "different",
+    "docs/ARCHITECTURE.md": "different",
+    "docs/VALIDATION.md": "different",
+    "examples/demo.c": "identical",
+    "include/asm/primitives.h": "identical",
+    "include/mm/spatial_pool.h": "identical",
+    "include/neuro.h": "identical",
+    "src/routing.c": "identical",
+    "src/spatial_pool.c": "identical",
+    "tests/test_routing.c": "identical",
+    "tests/test_spatial_pool.c": "identical"
+  },
+  "source_changes": {
+    "neuroroute-1024/README.md": {
+      "original_sha256": "92d9f07200050cb9d3d7868effd482bf3826962d3413f47c6d1fc1695bc24c51",
+      "release_sha256": "1d8ef0f527e9cfb5e27b295659ce2ff36026323660d8f583fed91b97797a9645"
+    },
+    "neuroroute-1024/docs/ARCHITECTURE.md": {
+      "original_sha256": "dc2b39c4ee99c5e640af8b0619ac58d639239a6865c707c4554215606f394430",
+      "release_sha256": "1a1ca57aa98c9f7fd87a178769948ffa90b467e7b2d02b29618c17119826aafc"
+    },
+    "neuroroute-devtools-1024/Makefile": {
+      "original_sha256": "3259c32ab072662e7dedac70d25679b9f8c1adada48418230db97f35e4dc2dbf",
+      "release_sha256": "20d72bacdab274a20543057f1eb66de86afccd5c65f46786db05f78b58c7941d"
+    },
+    "neuroroute-devtools-1024/docs/ARCHITECTURE.md": {
+      "original_sha256": "6ef66e8f0672cfb935b2852ed65308d63bc68f62f592a2ba7e234c987e0ce6b6",
+      "release_sha256": "5bd9d1355bf43165cb4488623d07902f40b3d8a53c8aeadfde5be6d4b4a13380"
+    }
+  }
+}
